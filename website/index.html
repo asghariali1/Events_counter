@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آمار ایران - داشبورد</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>🇮🇷 آمار ملی ایران</h1>
+        <p>داشبورد نظارت بر داده‌های زنده</p>
+    </div>
+
+    <div class="controls">
+        <h3>📊 دوره گزارش</h3>
+        <div class="time-period-buttons">
+            <button class="period-btn" data-period="real-time">زنده</button>
+            <button class="period-btn active" data-period="daily">روزانه</button>
+            <button class="period-btn" data-period="monthly">ماهانه</button>
+            <button class="period-btn" data-period="yearly">سالانه</button>
+        </div>
+    </div>
+
+    <div class="stats-container">
+        <div class="stats-grid">
+            <div class="stat-card danger">
+                <div class="stat-header">
+                    <div class="stat-icon">🚗</div>
+                    <div class="stat-title">مرگ بر اثر تصادفات رانندگی</div>
+                </div>
+                <div class="stat-number" id="traffic-deaths">0</div>
+                <div class="stat-period" id="traffic-deaths-period">افراد کشته شده در تصادفات رانندگی</div>
+                <div class="stat-details">
+                    <div class="stat-rate" id="traffic-deaths-rate">~۵۲ مرگ در روز</div>
+                    <div class="stat-trend">🔴 NA</div>
+                </div>
+            </div>
+
+            <div class="stat-card danger">
+                <div class="stat-header">
+                    <div class="stat-icon">🫁</div>
+                    <div class="stat-title">مرگ بر اثر آلودگی هوا</div>
+                </div>
+                <div class="stat-number" id="pollution-deaths">0</div>
+                <div class="stat-period" id="pollution-deaths-period">مرگ بر اثر آلودگی هوا</div>
+                <div class="stat-details">
+                    <div class="stat-rate" id="pollution-deaths-rate">~۸۵ در روز</div>
+                    <div class="stat-trend">🔴 NA</div>
+                </div>
+            </div>
+
+            <div class="stat-card danger">
+                <div class="stat-header">
+                    <div class="stat-icon">👷</div>
+                    <div class="stat-title">کارگران کشته شده حین کار</div>
+                </div>
+                <div class="stat-number" id="workers-deaths">0</div>
+                <div class="stat-period" id="workers-deaths-period">بستری در سراسر کشور</div>
+                <div class="stat-details">
+                    <div class="stat-rate" id="workers-deaths-rate">~۵ در روز</div>
+                    <div class="stat-trend">🔴 NA</div>
+                </div>
+            </div>
+                        <div class="stat-card danger">
+                <div class="stat-header">
+                    <div class="stat-icon">⚖️</div>
+                    <div class="stat-title">مجازات اعدام</div>
+                </div>
+                <div class="stat-number" id="death-penalty">0</div>
+                <div class="stat-period" id="death-penalty-period">اعدام‌های ثبت شده</div>
+                <div class="stat-details">
+                    <div class="stat-rate" id="death-penalty-rate">~۳.۱۴ در روز</div>
+                    <div class="stat-trend">🔴 NA</div>
+                </div>
+            </div>
+            <div class="stat-card warning">
+                <div class="stat-header">
+                    <div class="stat-icon">🎓</div>
+                    <div class="stat-title">بازماندگان از تحصیل</div>
+                </div>
+                <div class="stat-number" id="education-dropouts">0</div>
+                <div class="stat-period" id="education-dropouts-period">دانش‌آموزانی که تحصیل را ترک کرده‌اند</div>
+                <div class="stat-details">
+                    <div class="stat-rate" id="education-dropouts-rate">~۴۵۰ در روز</div>
+                    <div class="stat-trend">⚠️ بالا</div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="stat-card success">
+                <div class="stat-header">
+                    <div class="stat-icon">👶</div>
+                    <div class="stat-title">تولدهای جدید</div>
+                </div>
+                <div class="stat-number" id="new-births">0</div>
+                <div class="stat-period" id="new-births-period">تولدهای ثبت شده</div>
+                <div class="stat-details">
+                    <div class="stat-rate" id="new-births-rate">~۳٬۵۰۰ در روز</div>
+                    <div class="stat-trend">💚 پایدار</div>
+                </div>
+            </div>
+
+            <div class="stat-card danger">
+                <div class="stat-header">
+                    <div class="stat-icon">♀️</div>
+                    <div class="stat-title">خشونت علیه زنان</div>
+                </div>
+                <div class="stat-number" id="violence-against-women">0</div>
+                <div class="stat-period" id="violence-against-women-period">زنان قربانی خشونت</div>
+                <div class="stat-details">
+                    <div class="stat-rate" id="violence-against-women-rate">~۰.۵ در روز</div>
+                    <div class="stat-trend">🔴 نگران‌کننده</div>
+                </div>
+            </div>
+
+            <div class="stat-card warning">
+                <div class="stat-header">
+                    <div class="stat-icon">🏜️</div>
+                    <div class="stat-title">فرسایش خاک</div>
+                </div>
+                <div class="stat-number" id="soil-erosion">0</div>
+                <div class="stat-period" id="soil-erosion-period">حجم خاک فرسایش یافته (تن)</div>
+                <div class="stat-details">
+                    <div class="stat-rate" id="soil-erosion-rate">~۴۲ تن در روز</div>
+                    <div class="stat-trend">📈 در حال افزایش</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Detail Modal -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">عنوان آمار</h2>
+                <span class="close" id="closeModal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-stats">
+                    <div class="modal-stat-item">
+                        <span class="modal-stat-label">میانگین روزانه:</span>
+                        <span class="modal-stat-value" id="modal-daily-avg">0</span>
+                    </div>
+                    <div class="modal-stat-item">
+                        <span class="modal-stat-label">میانگین ماهانه:</span>
+                        <span class="modal-stat-value" id="modal-monthly-avg">0</span>
+                    </div>
+                    <div class="modal-stat-item">
+                        <span class="modal-stat-label">میانگین سالانه:</span>
+                        <span class="modal-stat-value" id="modal-yearly-avg">0</span>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="statisticsChart" width="400" height="200"></canvas>
+                </div>
+                <div class="modal-description">
+                    <h3>توضیحات و منابع</h3>
+                    <p id="modal-description-text">توضیحات تفصیلی در اینجا نمایش داده می‌شود...</p>
+                    <div class="modal-sources">
+                        <h4>منابع:</h4>
+                        <ul id="modal-sources-list">
+                            <li>منبع ۱</li>
+                            <li>منبع ۲</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    <div class="update-info">
+        <p><span class="pulse-dot"></span>جریان داده زنده | آخرین بروزرسانی: <span id="last-update">--:--:--</span></p>
+        <small>* شمارنده‌های زنده بر اساس میانگین‌های آماری واقعی شبیه‌سازی می‌شوند</small>
+    </div>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

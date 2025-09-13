@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "source": "factnameh",
+    "description": "Education statistics for Iran",
+    "last_updated": "2025-09-10",
+    "data_type": "students_enrollment"
+  },
+  "education_data": [
+    {
+      "year": 1396,
+      "persian_year": 1396,
+      "gregorian_year": 2017,
+      "students": 747911
+    },
+    {
+      "year": 1397,
+      "persian_year": 1397,
+      "gregorian_year": 2018,
+      "students": 696399
+    },
+    {
+      "year": 1398,
+      "persian_year": 1398,
+      "gregorian_year": 2019,
+      "students": 928899
+    },
+    {
+      "year": 1399,
+      "persian_year": 1399,
+      "gregorian_year": 2020,
+      "students": 938614
+    },
+    {
+      "year": 1400,
+      "persian_year": 1400,
+      "gregorian_year": 2021,
+      "students": 980871
+    },
+    {
+      "year": 1401,
+      "persian_year": 1401,
+      "gregorian_year": 2022,
+      "students": 911272
+    },
+    {
+      "year": 1402,
+      "persian_year": 1402,
+      "gregorian_year": 2023,
+      "students": 929798
+    },
+    {
+      "year": 1403,
+      "persian_year": 1403,
+      "gregorian_year": 2024,
+      "students": 992321
+    }
+  ]
+}

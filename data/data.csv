@@ -1,0 +1,8 @@
+Topic,Year,Forecast_Number,Unit,Real_Number,Daily_Average,Monthly_Average
+Car Accidents,1404,18922,Persons,NA,51.841095890411,1576.83333333333
+Soil erosion,1404,15400,KG,,42.1917808219178,1283.33333333333
+Violence Against Women,1404,182,Persons,NA,0.5,15
+Air Pollution,1404,40467,Persons,NA,110.868493150685,3372.25
+Education Dropout,1404,1036744,Persons,NA,2840.39452054795,86395.3333333333
+Workers Died,1404,1986,Persons,NA,5.44109589041096,165.5
+Death Penalty,1404,1149,Persons,NA,3.14794520547945,95.75

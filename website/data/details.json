@@ -1,0 +1,110 @@
+{
+  "iran_statistics_details": {
+    "metadata": {
+      "last_updated": "2025-09-10T10:30:00Z",
+      "source": "Different official and semi-official sources",
+      "update_frequency": "irregular"
+    },
+    "statistics": {
+      "traffic_accidents_deaths": {
+        "deaths": {
+          "daily_average": 52,
+          "monthly_average": 1578,
+          "yearly_average": 18922,
+          "trend": "critical",
+          "icon": "🚗"
+        }
+      },
+      "education": {
+        "dropouts": {
+          "daily_average": 450,
+          "monthly_average": 13500,
+          "yearly_average": 164250,
+          "current_period_total": 135000,
+          "trend": "high",
+          "icon": "🎓"
+        },
+        "enrollment": {
+          "latest_year": 2024,
+          "latest_count": 992321,
+          "historical_data": [
+            {"year": 2017, "students": 747911},
+            {"year": 2018, "students": 696399},
+            {"year": 2019, "students": 928899},
+            {"year": 2020, "students": 938614},
+            {"year": 2021, "students": 980871},
+            {"year": 2022, "students": 911272},
+            {"year": 2023, "students": 929798},
+            {"year": 2024, "students": 992321}
+          ]
+        }
+      },
+      "air_pollution": {
+        "deaths": {
+          "daily_average": 85,
+          "monthly_average": 2550,
+          "yearly_average": 31025,
+          "current_period_total": 25500,
+          "trend": "severe",
+          "icon": "🫁"
+        }
+      },
+      "healthcare": {
+        "hospital_admissions": {
+          "daily_average": 12000,
+          "monthly_average": 360000,
+          "yearly_average": 4380000,
+          "current_period_total": 3650000,
+          "trend": "normal",
+          "icon": "🏥"
+        }
+      },
+      "employment": {
+        "unemployment_claims": {
+          "daily_average": 1200,
+          "monthly_average": 36000,
+          "yearly_average": 438000,
+          "current_period_total": 365000,
+          "trend": "rising",
+          "icon": "💼"
+        }
+      },
+      "demographics": {
+        "births": {
+          "daily_average": 3500,
+          "monthly_average": 105000,
+          "yearly_average": 1277500,
+          "current_period_total": 1065000,
+          "trend": "stable",
+          "icon": "👶"
+        }
+      },
+      "social": {
+        "violence_against_women_deaths": {
+          "daily_average": 0.5,
+          "monthly_average": 15,
+          "yearly_average": 180,
+          "trend": "N/A",
+          "icon": "♀️"
+        }
+      },
+      "environment": {
+        "soil_erosion": {
+          "daily_average": 42.2,
+          "monthly_average": 1283,
+          "yearly_average": 15400,
+          "trend": "N/A",
+          "icon": "🏜️"
+        }
+      }
+    },
+    "real_time_multipliers": {
+      "traffic_deaths": 0.00069,
+      "education_dropouts": 0.00052,
+      "pollution_deaths": 0.00098,
+      "hospital_admissions": 0.139,
+      "unemployment_claims": 0.0139,
+      "new_births": 0.0405
+    }
+  }
+}
